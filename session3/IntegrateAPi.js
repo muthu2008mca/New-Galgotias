@@ -1,4 +1,5 @@
-const api_url = "https://jsonplaceholder.typicode.com/users"
+// const api_url = "https://jsonplaceholder.typicode.com/users"
+const corna_api= "https://api.covid19api.com/summary"
 
 function getApiData(url){
     fetch(url)
@@ -15,7 +16,8 @@ function getApiData(url){
     //console.log(result)
 }
 
-getApiData(api_url)
+// getApiData(api_url)
+getApiData(corna_api)
 
 function displayDataTable(apidata)
 {
@@ -32,10 +34,16 @@ function displayDataTable(apidata)
        var newtd3 = document.createElement('td')
 
        //Assigning Data
-       newtd1.innerHTML = `${i.name}`
-       newtd2.innerHTML = `${i.email}`
-       newtd3.innerHTML = `${i.phone}`
+      // newtd1.innerHTML = `${i.name}`
+       //newtd2.innerHTML = `${i.email}`
+      // newtd3.innerHTML = `${i.phone}`
 
+       newtd1.innerHTML = `${i.Country}`
+       newtd2.innerHTML = `${i.Date}`
+       newtd3.innerHTML = `${i.TotalDeaths}`
+
+
+       
        //Appending column to row
        newRow.appendChild(newtd1)
        newRow.appendChild(newtd2)
