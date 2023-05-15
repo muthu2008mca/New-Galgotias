@@ -43,6 +43,6 @@ function displayDataTable(apidata)
        
 
        //Appending new row to table body
-       document.querySelector('tbody'),appendChild(newRow)
+       document.querySelector('tbody').appendChild(newRow)
     }
 }
