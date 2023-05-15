@@ -21,9 +21,10 @@ getApiData(corna_api)
 
 function displayDataTable(apidata)
 {
-    console.log(apidata)
+    //console.log(apidata)
+    console.log(corna_api)
 
-    for(let i of apidata)
+    for(let i of corna_api)
     {
        //dynamic row
        var newRow = document.createElement('tr')
